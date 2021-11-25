@@ -1,0 +1,8 @@
+Readme
+How to run the program in gcc
+go to the directory 
+Like
+----cd Downloads/c
+----Downloads/c~ls[ie to list the files]
+----gcc <filename.c> -o <filename>
+----./<filename.out>
