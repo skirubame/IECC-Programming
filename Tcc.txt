@@ -1,0 +1,12 @@
+Turbo C complier 
+---- Click Turbo C++ icon in your screen
+---- Click Start Turbo C++
+---- Go to File by using alt+F
+---- Select New
+---- Type the program
+---- Go to file by using alt+F
+---- Save the program with .c extension 
+	ie <filename.c>
+---- Compile the program with alt+C
+---- Run the program with alt+R
+---- To view the result go to Windows and click ouput
