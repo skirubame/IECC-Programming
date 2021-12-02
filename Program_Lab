@@ -1,0 +1,21 @@
+
+Consider you are hired for a shipment company to write a program that computes the dimension of weight of a box. You decide to start off by writing a program that calculates the dimensional weight of a particular box 12"X10"X8" Consider the weight of the box limited to 166 and also roundoff the number
+Convert the given Fahrenheit to Celsius.
+ Write a program that uses printf to display the following picture on the screen: 
+          *
+         *
+        *
+   *   *
+    * *
+     *
+Write a program that computes the volume of a sphere with a 10-meter radius, using the formula v = 4/3(pi)r^3.
+Write a program that asks the user to enter a rupees, then displays the amount with 5% tax added
+Write a program that asks the user to enter a value for x and then displays the value of the following polynomial: (3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6)
+Hint:C doesnot have exponent operators.
+Write a program that asks the user to enter a Indian rupees amount and then shows how to pay that amount using the smallest number of Rs20, Rs10, Rs5, and Rs1 
+Hint:Divide amount by 20 to determine no of 20 and reduce amount by the total value of 20. Repeat for other also
+Write a program that calculates the remaining balance on a loan after the first, second, and third monthly payments.
+
+Program from Syllabus
+Using IO Statements, get higher secondary marks of a student. Calculate and display the medical and engineering cut off marks. [ Assume the calculation formula ]
+Develop a C program to emulate the operations of an ATM using control structures. Authentication, Deposit, Withdrawal, and Balance check and pin change operations are to be supported.
