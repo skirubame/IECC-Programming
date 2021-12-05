@@ -1,0 +1,161 @@
+#include <stdio.h>
+
+#define NUM_PIE 3.141592653f
+
+void main(void)
+{
+    int radius;
+
+    printf("\nEnter the radius of a sphere: ");
+    scanf("%d", &radius);
+
+    printf("The volume of a %d-meter sphere is: %.2f\n\n",
+            radius, (4.0f/3.0f) * NUM_PIE * (radius * radius * radius));
+
+    
+}
+
+/* Write a program that calculates the remaining balance on a loan after the
+ * first, second, and third monthly payments.
+ *
+ * Display each balance with two digits after the decimal point.
+ */
+#include <stdio.h>
+
+void main(void)
+{
+    float loan, interest, monthlyPayment;
+
+    printf("\nEnter the amount of loan: ");
+    scanf("%f", &loan);
+    printf("Enter interest rate: ");
+    scanf("%f", &interest);
+    printf("Enter monthly payment: ");
+    scanf("%f", &monthlyPayment);
+
+    /* interest is yearly, so this converts it to a monthly rate */
+    interest = (interest * 0.01f) / 12;
+
+    loan = (loan - monthlyPayment) + (loan * interest);
+    printf("\nBalance remaining after first payment:  $%.2f", loan);
+    loan = (loan - monthlyPayment) + (loan * interest);
+    printf("\nBalance remaining after second payment: $%.2f", loan);
+    loan = (loan - monthlyPayment) + (loan * interest);
+    printf("\nBalance remaining after third payment:  $%.2f\n", loan);
+
+    }
+
+/* Write a program that asks the user to enter a amount, then
+ * displays the amount with 5% tax added
+ */
+#include <stdio.h>
+
+int main(void)
+{
+    float money;
+
+    printf("\nEnter an amount: ");
+    scanf("%f", &money);
+
+    money = money + (money * 0.05f);
+
+    printf("With tax added: $%.2f\n\n", money);
+
+    return 0;
+}
+
+/* Computes the dimensional weight of a
+   box from input provided by the user */
+
+#include <stdio.h>
+
+void main(void)
+{
+    int height, length, width, volume, weight;
+
+    printf("Enter height of box: ");
+    scanf("%d", &height);
+    printf("Enter length of box: ");
+    scanf("%d", &length);
+    printf("Enter width of box: ");
+    scanf("%d", &width);
+    volume = height * length * width;
+    weight = (volume + 165) / 166;
+
+    printf("Volume (cubic inches): %d\n", volume);
+    printf("Dimensional weight (pounds): %d\n", weight);
+
+    
+}
+
+/* Write a program that asks the user to enter a Indian rupees amount
+ * and then shows how to pay that amount using the smallest number of
+ * Rs20, Rs10, Rs5, and Rs1 
+ */
+#include <stdio.h>
+
+void main(void)
+{
+    int rupees, twenties, tens, fives;
+
+    printf("\nEnter a rupees amount: ");
+    scanf("%d", &rupees);
+
+    twenties = rupees / 20;
+    rupees  = rupees - (twenties * 20);
+    tens     = rupees / 10;
+    dollars  = rupees - (tens * 10);
+    fives    = rupees / 5;
+    rupees  = rupees - (fives * 5);
+   
+
+    printf("\nRs20 bills: %d", twenties);
+    printf("\nRs10 bills: %d", tens);
+    printf("\n Rs5 bills: %d", fives);
+    printf("\n Rs1 bills: %d\n\n", rupees);
+}
+
+/* Write a program that uses printf to display
+ * the following picture on the screen: 
+ *        *
+ *       *
+ *      *
+ * *   *
+ *  * *
+ *   *
+ */
+#include <stdio.h>
+
+void main(void)
+{
+    printf("\n       *\n");
+    printf("      * \n");
+    printf("     *  \n");
+    printf("*   *   \n");
+    printf(" * *    \n");
+    printf("  *     \n\n");
+
+}
+
+/* Write a program that asks the user to enter a value for x and then displays
+ * the value of the following polynomial: (3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6)
+ */
+#include <stdio.h>
+void main(void)
+{
+    int x;
+
+    printf("\nThe following polynomial will be calculated:\n");
+    printf("(3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6)\n\n");
+
+    printf("Enter a number x: ");
+    scanf("%d", &x);
+    printf("\n");
+
+    x = (3 * (x*x*x*x*x)) + (2 * (x*x*x*x))
+        - (5 * (x*x*x)) - (x*x) + (7 * x) - 6;
+
+    printf("Answer: %d\n\n", x);
+
+    
+}
